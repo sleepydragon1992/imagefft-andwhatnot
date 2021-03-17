@@ -72,6 +72,6 @@ if __name__ == "__main__":
 
     fft_array = generate_normalized_mtf_array(raw_array)
     frequency_array = generate_frequency_array(fft_array)
-    find_point_location(frequency_array, 20)
+    
     save_data_to_csv_file (frequency_array, fft_array, filename)
     plot_mtf(frequency_array, fft_array, filename)
